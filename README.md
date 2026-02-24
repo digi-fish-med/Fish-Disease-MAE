@@ -31,9 +31,18 @@ $$\mathcal{L}_{total} = \mathcal{L}_{pixel} + \lambda_{dct}\mathcal{L}_{dct} + \
 Our MAE employs an asymmetric design: a heavy **ViT-Small** encoder and a lightweight decoder. A high masking ratio (65%) is used to force the model to learn a robust internal representation of fish pathology.
 
 <p align="center">
-  <img src="docs/mae_architecture.pdf" width="800" alt="MAE Architecture">
+  <img src="docs/mae_architecture.png" width="800" alt="MAE Architecture">
   <br>
   <em>Figure 1: The proposed asymmetric MAE architecture with hybrid loss constraints.</em>
+</p>
+
+### Reconstruction Results
+We evaluate the reconstruction performance of our MAE using the adaptive multi-view hybrid loss. The figure below illustrates the original fish image, the masked input, and the reconstruction of the image.
+
+<p align="center">
+  <img src="./docs/result.png" width="800" alt="Reconstruction Results">
+  <br>
+  <em>Figure: Three-column visualization (Original / Masked / Reconstructed)</em>
 </p>
 
 ---
