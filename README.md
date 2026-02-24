@@ -8,7 +8,7 @@ This repository focuses on the **Pre-training Stage** of our framework, designed
 
 ## 🔬 Methodology: Generative Pre-training
 
-To overcome the domain shift of general-purpose models and the lack of high-quality labels, we propose a domain-specific **Asymmetric Masked Autoencoder (MAE)**. Unlike standard MAE, our framework is optimized to capture **microscopic textural deviations** (e.g., hemorrhages, fin rot) rather than just global shapes.
+To overcome the domain shift of general-purpose models and the lack of high-quality labels, we propose a domain-specific **Asymmetric Masked Autoencoder (MAE)**. Unlike standard MAE, our framework is optimized to capture **microscopic textural deviations** rather than just global shapes.
 
 ### 1. Zero-shot Background Denoising
 We utilize a "Localize First, Segment Later" strategy to eliminate complex aquatic backgrounds. By combining **Grounding-DINO** (detection) and **SAM** (segmentation), fish bodies are automatically extracted and placed on pure white backgrounds, ensuring the model focuses exclusively on intrinsic pathological lesions.
