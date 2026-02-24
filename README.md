@@ -40,7 +40,7 @@ Our MAE employs an asymmetric design: a heavy **ViT-Small** encoder and a lightw
 
 ## 📁 Repository Structure
 ```text
-├── config.py           # Hyperparameters & Loss weights ($\lambda_{dct}, \lambda_{perc}$, etc.)
+├── config.py           # Hyperparameters & Loss weights
 ├── dataset.py          # In-memory data loader for accelerated training
 ├── losses.py           # Implementation of DCT, Perceptual, and Gradient losses
 ├── preprocess.py       # Grounding-DINO + SAM zero-shot denoising pipeline
